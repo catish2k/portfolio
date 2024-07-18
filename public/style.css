@@ -1,0 +1,8 @@
+@font-face {
+  font-family: nexa;
+  src: url(assets/nexa.ttf);
+}
+
+* {
+  font-family: nexa;
+}
