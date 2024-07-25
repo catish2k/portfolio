@@ -5,10 +5,21 @@ html(lang="en")
         title Document
         script(src="https://cdn.tailwindcss.com") 
         link(rel="stylesheet", href="style.css")
-    body 
-        .grid.grid-cols-2.h-full.text-7xl
-            .bg-red-500.grid.justify-end
-                p.px-4.py-32 Kristoffersson
-            .bg-blue-500
+    body.h-screen.overflow-y-scroll.snap-y.snap-mandatory 
+        .grid.grid-cols-2.h-full.text-8xl.snap-start
+            .grid.justify-end.bg-gradient-to-r.from-red-200.to-blue-200.border-l-4.border-slate-800
+                p.px-4.py-40 Kristoffersson
+            .bg-gradient-to-l.from-red-200.to-blue-200
                 p.px-4.py-16 Måns
-        .grid.h-full
+        .grid.h-full.snap-start.grid-rows-5.gap-4.bg-gradient-to-r.from-blue-200.via-red-200.to-blue-200
+            .grid.items-center.justify-center
+                h2.text-8xl.m-0 Projects
+            .grid.grid-rows-3.row-span-4.gap-4.mb-4.mx-4
+                .grid.grid-cols-4.bg-red-500.rounded-3xl.p-4.gap-12
+                    .row-span-2.border-2.border-slate-800.rounded-3xl
+                    p.text-6xl Capyrun
+                .bg-blue-500.rounded-3xl
+                .bg-green-500.rounded-3xl
+
+
+
